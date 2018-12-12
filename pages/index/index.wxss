@@ -1,0 +1,29 @@
+/**index.wxss**/
+.inputBase64 {
+  width: 84%;
+  margin: 4%;
+  padding: 4%;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #efefef;
+}
+
+.encodeBtn {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.showImage { 
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.updateImageBtn {
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
