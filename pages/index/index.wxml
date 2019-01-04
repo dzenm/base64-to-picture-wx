@@ -1,10 +1,19 @@
 <!--index.wxml-->
 <view class='section'>
-  <form bindsubmit='getBase64Value'>
-    <textarea class='inputBase64' bindblur='bindTextAreaBlur' auto-focus placeholder='输入要解码的Base64' show-confirm-bar='' maxlength='-1' value='{{base64Value}}'>
-    </textarea>  
-    <button class='encodeBtn' type='primary' form-type='submit'>Base64还原图片</button>
-  </form>
+  <view class='text'>
+    <view class='textView'>
+      <form bindsubmit='getBase64Value'>
+        <textarea class='textarea' bindblur='bindTextAreaBlur' auto-focus placeholder='输入要解码的base64' show-confirm-bar='' maxlength='-1' value='{{base64Value}}'>
+        </textarea>  
+      </form>
+    </view>
+    <view class='btnView'>
+      <button class='textBtn' bindtap='clipData'>剪贴</button>
+      <button class='textBtn' bindtap='copyData'>复制</button>
+      <button class='textBtn' bindtap='transBase64'>转换</button>
+      <button class='textBtn' bindtap='clearData'>清除</button>
+    </view>
+  </view>
   <image class='showImage' src='{{images}}'mode='aspectFit' bindtap="previewImage"/>  
-  <button class='updateImageBtn' type='primary' loading='{{updateLoading}}' bindtap='updateImage'>上传转换Base64的图片</button>
+  <button class='uploadImageBtn' type='primary' loading='{{updateLoading}}' bindtap='uploadImage'>选择图片</button>
 </view>

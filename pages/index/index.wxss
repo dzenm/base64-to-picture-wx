@@ -1,20 +1,39 @@
 /**index.wxss**/
-.inputBase64 {
-  width: 84%;
-  margin: 4%;
+.text {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.textView {
+  margin: 2%;
+  width: 78%;
+  height: auto;
+}
+
+.textarea {
+  height: 85%;
+  width: 96%;
   padding: 4%;
   border: 1px solid;
   border-radius: 10px;
   border-color: #efefef;
 }
 
-.encodeBtn {
-  width: 92%;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.btnView {
+  margin: 2%;
+  width: 18%;
 }
+
+.textBtn {
+  width: 96%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  padding: 2%;
+  background-color: #ffffff;
+}
+
+button::after{ border: none; }
 
 .showImage { 
   width: 80%;
@@ -22,8 +41,8 @@
   margin-right: 10%;
 }
 
-.updateImageBtn {
-  width: 92%;
-  margin-left: 4%;
+.uploadImageBtn {
+  width: 96%;
+  margin-left: 2%;
   margin-right: 4%;
 }
